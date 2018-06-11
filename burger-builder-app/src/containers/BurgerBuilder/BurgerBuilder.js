@@ -81,7 +81,9 @@ removeIngredientHandler = (type) => {
       }
     return(
       <Utility>
-        <Modal />
+        <Modal>
+          <OrderSummary ingredients={this.state.ingredients}/>
+        </Modal>
         <Burger ingredients={this.state.ingredients}/>
         <BuildControls
           ingredientAdded={this.addIngredientHandler}
