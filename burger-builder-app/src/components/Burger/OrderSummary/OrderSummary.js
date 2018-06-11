@@ -1,5 +1,5 @@
 import React from 'react';
-import Utility from '../../hoc/Utility';
+import Utility from '../../../hoc/Utility';
 
 const orderSummary = (props) => {
   const ingredientSummary = Object.keys(props.ingredients)
